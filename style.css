@@ -52,7 +52,7 @@ h2.identity__brand{
     text-decoration: none;
     color: var(--secondary-color);
 }
-.nav__menu li:nth-child(6){
+.nav__menu li:nth-child(5){
     background: rgb(121, 1, 130);
     padding: 0.2rem 1rem;
 }
@@ -160,6 +160,9 @@ i{
 .social__icons{
     cursor: pointer;
 }
+.social__icons a{
+    text-decoration: none;
+}
 .fa-brands{
     transition: all ease 0.4s;
     margin: 0.5rem;
@@ -212,6 +215,8 @@ i{
     width: 400px;
     height: 300px;
     margin: 1rem;
+    padding: 1rem;
+    overflow: hidden;
 }
 .cards img{
     width: 100px;
@@ -271,11 +276,12 @@ input[type="submit"]{
 /*** ABOUT SECTION ***/
 .about__container{
     background: var(--main-color);
-    height: 90vh;
+    height: 80vh; 
+    overflow: hidden;
 }
 .subcontainer img{
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     object-fit: cover;
 }
 @media screen and (max-width: 768px){
@@ -290,9 +296,8 @@ input[type="submit"]{
         transition: 0.3s;
     }
     .subcontainer img{
-        height: 100px;
-        width: 100px;
-        object-fit: cover;
+        height: 150px;
+        width: 150px;
         border-radius: 50%;
     }
     .nav__menu.show{
@@ -325,6 +330,12 @@ input[type="submit"]{
         margin: auto;
         width: auto;
     }
+    .about__container{
+        height: auto;
+    }
+    .about__container p{
+        padding-bottom: 5rem;
+    }
 }
 @media screen and (max-width: 995px){
     .testmonial__content{
@@ -338,5 +349,17 @@ input[type="submit"]{
     }
     .animate{
         width: 50%;
+    }
+    .nav__header{
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 760px){
+    .nav__header{
+        text-align: initial;
+        flex-direction: row;
     }
 }
