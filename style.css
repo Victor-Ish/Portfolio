@@ -156,6 +156,7 @@ i{
 .la-tools
 {
     color: var(--base-color);
+    text-align: center;
 }
 .social__icons{
     cursor: pointer;
@@ -283,6 +284,10 @@ input[type="submit"]{
     height: 200px;
     width: 200px;
     object-fit: cover;
+}
+textarea:focus,
+textarea:valid{
+    padding-left: 0.7rem;
 }
 @media screen and (max-width: 768px){
     .nav__menu{

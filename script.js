@@ -34,7 +34,8 @@ navLists.forEach((item) =>{
 })
 
 //validating form email
-const forwardEmail = document.querySelector('#send')
+/****
+ const forwardEmail = document.querySelector('#send')
 
 const sendEmail = () => {
   const mailTo = document.querySelector('#mailto').value
@@ -46,3 +47,4 @@ const sendEmail = () => {
   )
 }
 forwardEmail.addEventListener('click', sendEmail)
+****/
